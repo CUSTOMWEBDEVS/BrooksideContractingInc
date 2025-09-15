@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brookside Contracting Inc.</title>
+<meta name="description" content="Natural water features & estate stonework. Principal-led. Discreet. Since 1994." />
+
+<!-- Favicon now served from ./images/ -->
+<link rel="icon" href="images/brookside-logo-hero.png" />
+<link rel="apple-touch-icon" href="images/brookside-logo-hero.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0f1112;--panel:#151819;--ink:#e7e6e1;--ink-2:#b9bebd;--line:rgba(255,255,255,.12);--img-bg:#1a1d1f;--gold:#c2a455}
+  *{box-sizing:border-box}html,body{margin:0;padding:0}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+  body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{width:min(1080px,92vw);margin-inline:auto}.section{padding:70px 0}hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+  .top{position:sticky;top:0;z-index:10;background:rgba(15,17,18,.7);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid var(--line)}
+  .top .inner{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+  .left{display:flex;align-items:center;gap:16px}
+  .nav-logo{height:24px;width:auto;border-radius:4px}
+  .nav{display:flex;gap:22px}.nav a{font:500 14px/1 Inter;text-transform:lowercase;color:var(--ink);opacity:.84}.nav a:hover{opacity:1}
+  .socials{display:flex;gap:10px}
+  .socials a{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--line);border-radius:8px;background:transparent;opacity:.9}
+  .socials a:hover{background:#121516;opacity:1}.icon{width:18px;height:18px;display:block}.icon path{fill:var(--ink)}.sr-only{position:absolute;left:-9999px}
+  .brand{padding:34px 0;text-align:center}.logo{display:inline-block;opacity:.96}.tag{margin-top:10px;color:var(--ink-2);font-size:14px}
+  .banner{aspect-ratio:21/9;background:var(--img-bg) url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/Header_Images/slide2_waterfall.png') center/cover no-repeat;border:1px solid var(--line);border-radius:8px}
+  .h2{font:700 clamp(20px,3.6vw,28px)/1.15 Sora;margin:0 0 12px;text-transform:uppercase;letter-spacing:.04em}
+  .sub{color:var(--ink-2);max-width:65ch}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font:700 13px/1 Inter;text-transform:uppercase;letter-spacing:.08em}
+  .btn:hover{background:#121516}
+  .panel{border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:16px}
+  .grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:18px}
+  .tile{border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+  .tile-hero{aspect-ratio:4/3;background:var(--img-bg);background-image:var(--img);background-size:cover;background-position:center;border-bottom:1px solid var(--line)}
+  .tile-body{padding:10px}.tile h3{font:700 13px/1.2 Sora;margin:0;text-transform:uppercase;letter-spacing:.06em}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+  .shot{background:var(--img-bg);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .shot img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+  .form{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:14px}
+  .form label{display:flex;flex-direction:column;gap:6px;font-size:14px}
+  .form input,.form textarea,.form select{border:1px solid rgba(255,255,255,.14);background:#0f1213;color:var(--ink);border-radius:8px;padding:10px 12px;font:400 14px/1 Inter;appearance:none}
+  .form .full{grid-column:1/-1}.note{color:var(--ink-2);font-size:12px}
+  .foot{padding:26px 0;border-top:1px solid var(--line);color:#98a09f;display:flex;justify-content:space-between}
+  @media (max-width:1040px){.grid6{grid-template-columns:repeat(3,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}}
+  @media (max-width:640px){.form{grid-template-columns:1fr}.grid6{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap inner">
+    <div class="left">
+      <!-- Header logo now uses ./images/ -->
+      <img class="nav-logo" src="images/brookside-logo-hero.png" alt="Brookside logo">
+      <nav class="nav">
+        <a href="#about">about</a>
+        <a href="#expertise">expertise</a>
+        <a href="#gallery">gallery</a>
+        <a href="#booking">booking</a>
+      </nav>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/profile.php?id=100066804336905" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.09 5.66 21.21 10.44 22v-7.02H7.9v-2.91h2.54V9.41c0-2.5 1.49-3.88 3.76-3.88 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22C18.34 21.21 22 17.09 22 12.07z"/></svg>
+        <span class="sr-only">Facebook</span>
+      </a>
+      <a href="https://x.com/BrooksideSTL" target="_blank" rel="noopener" aria-label="X (Twitter)">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h3.6l5.1 7.3L15.9 3H21l-7.5 10.7L21 21h-3.6l-5.4-7.7L8.1 21H3l7.6-10.6L3 3z"/></svg>
+        <span class="sr-only">X</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- brand / hero -->
+  <section id="about" class="section">
+    <div class="wrap brand">
+      <!-- Hero logo now uses ./images/ -->
+      <img src="images/brookside-logo-hero.png" alt="Brookside Contracting logo" class="logo" width="480" height="auto" />
+      <div class="tag">Natural water features & estate stonework • St. Louis & beyond • Since 1994</div>
+    </div>
+    <div class="wrap">
+      <div class="banner" aria-label="Stone & water detail"></div>
+    </div>
+  </section>
+
+  <!-- overview -->
+  <section class="section">
+    <div class="wrap">
+      <h2 class="h2">Overview</h2>
+      <p class="sub">Professional landscape construction practice near St. Louis, focused on <strong>water features</strong> and estate stonework, serving residential and commercial clients with principal-led delivery.</p>
+      <hr>
+      <div class="panel">
+        <p style="margin:.6em 0 0">Brookside has specialized for decades in the <strong>design and construction of waterfalls, streams, ponds, fountains, and natural swimming pools</strong>. We also execute boulder gardens, stone walls and pathways, and outdoor entertainment areas.</p>
+        <p style="margin:.6em 0 0">Our approach blends <strong>artistic vision, design detail, and sound construction</strong> to create scenes that appear naturally formed. We collaborate with top professionals and have delivered high-profile work across <strong>Missouri, Illinois, and Kansas</strong>.</p>
+        <p style="margin:.6em 0 0">A seasoned field team brings <strong>100+ years</strong> of combined experience, coordinating with architects and designers to meet specifications precisely. We believe in Michael Littlewood’s charge to “plan and design in harmony with nature”—and extend it to how we build.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- expertise -->
+  <section id="expertise" class="section">
+    <div class="wrap">
+      <h2 class="h2">Expertise</h2>
+      <p class="sub">Browse by outcome—request full case studies privately.</p>
+      <div class="grid6">
+        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/image72632.jpg')"></div><div class="tile-body"><h3>Natural Swimming Pools</h3></div></article>
+        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48327.jpg')"></div><div class="tile-body"><h3>Waterfalls & Cascades</h3></div></article>
+        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains1.jpg')"></div><div class="tile-body"><h3>Fountains & Courts</h3></div></article>
+        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream1.jpg')"></div><div class="tile-body"><h3>Streams</h3></div></article>
+        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48341.jpg')"></div><div class="tile-body"><h3>Stonework & Terraces</h3></div></article>
+        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains3.png')"></div><div class="tile-body"><h3>Outdoor Rooms</h3></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section id="gallery" class="section">
+    <div class="wrap">
+      <h2 class="h2">Gallery</h2>
+      <p class="sub">Selected work images; additional photography is shared on request.</p>
+      <div class="gallery">
+        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48325.jpg" alt="Brookside water feature"></figure>
+        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream2.jpg" alt="Brookside stream"></figure>
+        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48341.jpg" alt="Brookside cascades with building"></figure>
+        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/image72632.jpg" alt="Waterfall composition"></figure>
+        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains1.jpg" alt="Fountain at Delmar Gardens"></figure>
+        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream1.jpg" alt="Stream detail"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- booking -->
+  <section id="booking" class="section" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <h2 class="h2">Booking</h2>
+      <p class="sub">We respond within one business day. Discretion by default.</p>
+      <form class="form" onsubmit="event.preventDefault();alert('Thank you — we will be in touch.')" aria-label="booking form">
+        <label><span>FULL NAME*</span><input name="name" required></label>
+        <label><span>EMAIL*</span><input type="email" name="email" required></label>
+        <label><span>SERVICE REQUEST*</span>
+          <select name="service" required>
+            <option value="" selected disabled>Select a service…</option>
+            <option>Natural Swimming Pool</option>
+            <option>Waterfalls & Streams</option>
+            <option>Fountains & Courts</option>
+            <option>Stone Paths & Terraces</option>
+            <option>Boulder & Garden Walls</option>
+            <option>Outdoor Rooms</option>
+            <option>Estate Maintenance / Stewardship</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label><span>PROJECT LOCATION</span><input name="location"></label>
+        <label class="full"><span>BRIEF OVERVIEW</span><textarea name="message" rows="4" placeholder="Scope, timeline, architect/designer if engaged…"></textarea></label>
+        <div class="full" style="display:flex;gap:10px;align-items:center">
+          <button class="btn" type="submit">SUBMIT BOOKING</button>
+          <span class="note">*By submitting, you consent to be contacted regarding your inquiry.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <div>Brookside Contracting Inc.</div>
+  <div>© <span id="y"></span> Brookside Contracting Inc. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
