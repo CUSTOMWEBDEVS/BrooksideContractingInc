@@ -6,48 +6,156 @@
 <title>Brookside Contracting Inc.</title>
 <meta name="description" content="Natural water features & estate stonework. Principal-led. Discreet. Since 1994." />
 
-<!-- Favicon now served from ./images/ -->
 <link rel="icon" href="images/brookside-logo-hero.png" />
 <link rel="apple-touch-icon" href="images/brookside-logo-hero.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
-  :root{--bg:#0f1112;--panel:#151819;--ink:#e7e6e1;--ink-2:#b9bebd;--line:rgba(255,255,255,.12);--img-bg:#1a1d1f;--gold:#c2a455}
-  *{box-sizing:border-box}html,body{margin:0;padding:0}img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
-  body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-  .wrap{width:min(1080px,92vw);margin-inline:auto}.section{padding:70px 0}hr{border:0;border-top:1px solid var(--line);margin:40px 0}
-  .top{position:sticky;top:0;z-index:10;background:rgba(15,17,18,.7);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid var(--line)}
-  .top .inner{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
-  .left{display:flex;align-items:center;gap:16px}
-  .nav-logo{height:24px;width:auto;border-radius:4px}
-  .nav{display:flex;gap:22px}.nav a{font:500 14px/1 Inter;text-transform:lowercase;color:var(--ink);opacity:.84}.nav a:hover{opacity:1}
+  :root{
+    --bg:#0e1012; --panel:#141719; --ink:#e8e7e2; --muted:#a6adb4; --line:rgba(255,255,255,.12);
+    --gold:#c8a35f; --gold-2:#a88649; --ink-2:#cfd3db; --chip:#1a1e21; --img-bg:#111417;
+    --ring:0 0 0 3px rgba(200,163,95,.25);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  body{
+    background:radial-gradient(1200px 600px at 60% -10%, rgba(200,163,95,.06), transparent 60%) , var(--bg);
+    color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  .wrap{width:min(1180px,92vw);margin-inline:auto}
+  .section{padding:80px 0}
+  .h2{font:700 clamp(22px,3.6vw,30px)/1.15 Sora;letter-spacing:.04em;text-transform:uppercase;margin:0 0 10px}
+  .sub{color:var(--muted);max-width:68ch;margin:0}
+
+  /* Top bar */
+  .top{position:sticky;top:0;z-index:20;background:rgba(15,17,18,.55);backdrop-filter:saturate(125%) blur(8px);border-bottom:1px solid var(--line)}
+  .top .inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+  .left{display:flex;align-items:center;gap:14px}
+  .nav-logo{height:28px;width:auto;border-radius:6px}
+  .brand-text{font-weight:600;letter-spacing:.4px}
+  .nav{display:flex;gap:22px}
+  .nav a{font:500 14px/1 Inter;opacity:.86;text-transform:lowercase;position:relative}
+  .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);transition:right .3s ease}
+  .nav a:hover::after{right:0}
   .socials{display:flex;gap:10px}
-  .socials a{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--line);border-radius:8px;background:transparent;opacity:.9}
-  .socials a:hover{background:#121516;opacity:1}.icon{width:18px;height:18px;display:block}.icon path{fill:var(--ink)}.sr-only{position:absolute;left:-9999px}
-  .brand{padding:34px 0;text-align:center}.logo{display:inline-block;opacity:.96}.tag{margin-top:10px;color:var(--ink-2);font-size:14px}
-  .banner{aspect-ratio:21/9;background:var(--img-bg) url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/Header_Images/slide2_waterfall.png') center/cover no-repeat;border:1px solid var(--line);border-radius:8px}
-  .h2{font:700 clamp(20px,3.6vw,28px)/1.15 Sora;margin:0 0 12px;text-transform:uppercase;letter-spacing:.04em}
-  .sub{color:var(--ink-2);max-width:65ch}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);font:700 13px/1 Inter;text-transform:uppercase;letter-spacing:.08em}
-  .btn:hover{background:#121516}
-  .panel{border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:16px}
-  .grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:18px}
-  .tile{border:1px solid var(--line);border-radius:8px;background:var(--panel)}
-  .tile-hero{aspect-ratio:4/3;background:var(--img-bg);background-image:var(--img);background-size:cover;background-position:center;border-bottom:1px solid var(--line)}
-  .tile-body{padding:10px}.tile h3{font:700 13px/1.2 Sora;margin:0;text-transform:uppercase;letter-spacing:.06em}
-  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
-  .shot{background:var(--img-bg);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-  .shot img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-  .form{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:14px}
+  .socials a{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);border-radius:10px;background:transparent;opacity:.9}
+  .socials a:hover{background:#121518;opacity:1;box-shadow:var(--ring)}
+  .icon{width:18px;height:18px;display:block}.icon path{fill:var(--ink)}
+  .sr-only{position:absolute;left:-9999px}
+
+  /* Hero */
+  .hero{position:relative;min-height:78vh;display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero-media{
+    position:absolute;inset:0;background:
+      url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream1.jpg') center/cover no-repeat;
+    filter:saturate(.96) contrast(1.02);
+    transform:scale(1.03);
+  }
+  .hero-sheen{position:absolute;inset:0;background:radial-gradient(1200px 400px at 58% 18%, rgba(255,255,255,.14), transparent 60%)}
+  .hero-grad{position:absolute;inset:0;background:linear-gradient(180deg, rgba(12,14,16,.25) 0%, rgba(12,14,16,.65) 40%, rgba(12,14,16,.95) 100%)}
+  .hero-content{position:relative;padding:12vh 0 8vh}
+  .headline{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(36px,6vw,76px);line-height:1.04;margin:0 0 10px;text-shadow:0 4px 24px rgba(0,0,0,.45)}
+  .accent{color:var(--gold)}
+  .lead{max-width:60ch;color:var(--ink-2);font-size:18px}
+  .hero-ctas{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:1px solid transparent;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .btn--gold{background:linear-gradient(180deg,var(--gold),var(--gold-2));color:#0b0b0b;border-color:#ad8d52}
+  .btn--gold:hover{transform:translateY(-1px)}
+  .btn--ghost{border-color:#2b2e32;background:rgba(255,255,255,.02);color:var(--ink)}
+  .btn--ghost:hover{background:rgba(255,255,255,.05)}
+
+  /* Brand band */
+  .brand-band{display:flex;align-items:center;gap:14px;padding:24px 0 10px}
+  .logo{height:44px;width:auto;border-radius:8px;opacity:.96}
+
+  /* Overview + chips */
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0}
+  .chip{background:var(--chip);border:1px solid var(--line);padding:8px 12px;border-radius:999px;color:#cfd3db;font-size:13px}
+  .panel{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:16px}
+
+  /* Expertise cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+  .card{background:linear-gradient(180deg,#0f1214,#0b0d0f);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .25s ease}
+  .card:hover{transform:translateY(-2px)}
+  .card-img{aspect-ratio:4/3;background:var(--img-bg);background-image:var(--img);background-size:cover;background-position:center;filter:saturate(.96) contrast(1.03);border-bottom:1px solid var(--line)}
+  .card-body{padding:14px}
+  .card h3{font:700 14px/1.2 Sora;margin:0 0 4px;text-transform:uppercase;letter-spacing:.06em}
+  .card p{margin:0;color:#c9cdd6;font-size:14px}
+
+  /* Work Reel (no cropping) */
+  .reel-wrap{margin-top:18px}
+  .reel{display:flex;gap:10px;overflow:auto;padding-bottom:6px;scroll-snap-type:x mandatory}
+  .reel::-webkit-scrollbar{height:8px}
+  .reel::-webkit-scrollbar-thumb{background:#2a2d33;border-radius:8px}
+  .shot{flex:0 0 auto; height:320px; background:var(--img-bg); border:1px solid var(--line); border-radius:12px; display:grid;place-items:center; scroll-snap-align:start; cursor:zoom-in; overflow:hidden}
+  .shot img{height:100%; width:auto; object-fit:contain}
+  .reel-ctrls{display:flex;gap:10px;margin-top:10px}
+  .ctrl{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:#121417}
+  .ctrl:hover{box-shadow:var(--ring)}
+
+  /* Before/After slider */
+  .ba{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:#0b0d0f;margin-top:16px}
+  .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .ba .after{clip-path:inset(0 50% 0 0)} /* start centered */
+  .ba input[type="range"]{position:absolute;inset:auto 0 10px 0;width:100%;appearance:none;background:transparent}
+  .ba input[type="range"]::-webkit-slider-runnable-track{height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+  .ba input[type="range"]::-webkit-slider-thumb{appearance:none;width:18px;height:18px;border-radius:50%;background:var(--gold);border:2px solid #111;margin-top:-8px}
+  .ba .handle{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+  .handle span{background:rgba(17,20,23,.7);border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px}
+
+  /* Split/process */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+  .steps{display:grid;gap:10px;margin-top:6px}
+  .step{display:flex;gap:12px;align-items:flex-start;background:linear-gradient(180deg,#0f1214,#0b0d0f);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .badge{display:grid;place-items:center;min-width:30px;height:30px;border-radius:8px;border:1px solid var(--gold);color:var(--gold);font-weight:700}
+
+  /* Contact */
+  .contact{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:start}
+  .ways{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+  .way{background:#121417;border:1px solid var(--line);padding:10px 12px;border-radius:10px}
+  .form{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:14px}
   .form label{display:flex;flex-direction:column;gap:6px;font-size:14px}
   .form input,.form textarea,.form select{border:1px solid rgba(255,255,255,.14);background:#0f1213;color:var(--ink);border-radius:8px;padding:10px 12px;font:400 14px/1 Inter;appearance:none}
-  .form .full{grid-column:1/-1}.note{color:var(--ink-2);font-size:12px}
-  .foot{padding:26px 0;border-top:1px solid var(--line);color:#98a09f;display:flex;justify-content:space-between}
-  @media (max-width:1040px){.grid6{grid-template-columns:repeat(3,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}}
-  @media (max-width:640px){.form{grid-template-columns:1fr}.grid6{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}}
+  .form input:focus,.form textarea:focus,.form select:focus{outline:none;box-shadow:var(--ring);border-color:var(--gold)}
+  .full{grid-column:1/-1}
+  .note{color:var(--muted);font-size:12px}
+
+  /* Footer */
+  .foot{padding:26px 0;border-top:1px solid var(--line);color:#98a09f;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  /* Lightbox */
+  .lightbox{position:fixed;inset:0;background:rgba(5,6,7,.9);display:none;align-items:center;justify-content:center;z-index:60}
+  .lightbox.show{display:flex}
+  .lightbox img{max-width:min(92vw,1200px);max-height:86vh;object-fit:contain;border-radius:12px;border:1px solid var(--line)}
+  .lightbox .close{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;background:#111418;cursor:pointer}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(14px);transition:.6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* Responsive */
+  @media (max-width:1040px){
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .split,.contact{grid-template-columns:1fr}
+  }
+  @media (max-width:720px){
+    .cards{grid-template-columns:1fr}
+    .shot{height:260px}
+    .brand-text{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .reveal{transition:none}
+    .card{transition:none}
+    .nav a::after{transition:none}
+    .btn--gold:hover{transform:none}
+  }
 </style>
 </head>
 <body>
@@ -55,12 +163,12 @@
 <header class="top">
   <div class="wrap inner">
     <div class="left">
-      <!-- Header logo now uses ./images/ -->
       <img class="nav-logo" src="images/brookside-logo-hero.png" alt="Brookside logo">
-      <nav class="nav">
+      <div class="brand-text">Brookside Contracting Inc.</div>
+      <nav class="nav" aria-label="Primary">
         <a href="#about">about</a>
         <a href="#expertise">expertise</a>
-        <a href="#gallery">gallery</a>
+        <a href="#work">work</a>
         <a href="#booking">booking</a>
       </nav>
     </div>
@@ -77,102 +185,266 @@
   </div>
 </header>
 
-<main>
-  <!-- brand / hero -->
-  <section id="about" class="section">
-    <div class="wrap brand">
-      <!-- Hero logo now uses ./images/ -->
-      <img src="images/brookside-logo-hero.png" alt="Brookside Contracting logo" class="logo" width="480" height="auto" />
-      <div class="tag">Natural water features & estate stonework • St. Louis & beyond • Since 1994</div>
+<!-- HERO -->
+<section class="hero" id="about" aria-label="Hero">
+  <div class="hero-media" aria-hidden="true"></div>
+  <div class="hero-sheen" aria-hidden="true"></div>
+  <div class="hero-grad" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <img src="images/brookside-logo-hero.png" alt="Brookside Contracting logo" class="logo" style="height:56px">
+    <h1 class="headline">Stone. Water. Quiet <span class="accent">Drama</span>.</h1>
+    <p class="lead">We craft living water features, natural pools, and estate stonework that feel like they’ve always belonged. Principal-led. Site-obsessed. Built to age beautifully.</p>
+    <div class="hero-ctas">
+      <a href="#work" class="btn btn--gold">See recent work</a>
+      <a href="#booking" class="btn btn--ghost">Start a conversation</a>
     </div>
-    <div class="wrap">
-      <div class="banner" aria-label="Stone & water detail"></div>
+    <div class="chips" aria-label="High-level highlights">
+      <span class="chip">Since 1994</span>
+      <span class="chip">Missouri • Illinois • Kansas</span>
+      <span class="chip">Architect/Designer friendly</span>
+      <span class="chip">Discretion by default</span>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- overview -->
-  <section class="section">
-    <div class="wrap">
-      <h2 class="h2">Overview</h2>
-      <p class="sub">Professional landscape construction practice near St. Louis, focused on <strong>water features</strong> and estate stonework, serving residential and commercial clients with principal-led delivery.</p>
-      <hr>
-      <div class="panel">
-        <p style="margin:.6em 0 0">Brookside has specialized for decades in the <strong>design and construction of waterfalls, streams, ponds, fountains, and natural swimming pools</strong>. We also execute boulder gardens, stone walls and pathways, and outdoor entertainment areas.</p>
-        <p style="margin:.6em 0 0">Our approach blends <strong>artistic vision, design detail, and sound construction</strong> to create scenes that appear naturally formed. We collaborate with top professionals and have delivered high-profile work across <strong>Missouri, Illinois, and Kansas</strong>.</p>
-        <p style="margin:.6em 0 0">A seasoned field team brings <strong>100+ years</strong> of combined experience, coordinating with architects and designers to meet specifications precisely. We believe in Michael Littlewood’s charge to “plan and design in harmony with nature”—and extend it to how we build.</p>
-      </div>
+<!-- OVERVIEW -->
+<section class="section">
+  <div class="wrap">
+    <h2 class="h2">Overview</h2>
+    <p class="sub">We design and build <strong>waterfalls, streams, ponds, fountains, and natural swimming pools</strong>, plus stone paths, terraces, and outdoor rooms. It’s art, engineering, and a lot of patience.</p>
+    <div class="panel" style="margin-top:14px">
+      <p style="margin:.5em 0 0">Our work balances <strong>structure and wild</strong>: rock massing, water speeds, planting, and sound. We collaborate with leading landscape architects and custom builders to hit specs and keep the magic.</p>
+      <p style="margin:.5em 0 0">Field team experience totals <strong>100+ years</strong>. We believe in Michael Littlewood’s “plan and design in harmony with nature” — and extend it to how we build and maintain.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- expertise -->
-  <section id="expertise" class="section">
-    <div class="wrap">
-      <h2 class="h2">Expertise</h2>
-      <p class="sub">Browse by outcome—request full case studies privately.</p>
-      <div class="grid6">
-        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/image72632.jpg')"></div><div class="tile-body"><h3>Natural Swimming Pools</h3></div></article>
-        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48327.jpg')"></div><div class="tile-body"><h3>Waterfalls & Cascades</h3></div></article>
-        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains1.jpg')"></div><div class="tile-body"><h3>Fountains & Courts</h3></div></article>
-        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream1.jpg')"></div><div class="tile-body"><h3>Streams</h3></div></article>
-        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48341.jpg')"></div><div class="tile-body"><h3>Stonework & Terraces</h3></div></article>
-        <article class="tile"><div class="tile-hero" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains3.png')"></div><div class="tile-body"><h3>Outdoor Rooms</h3></div></article>
-      </div>
-    </div>
-  </section>
+<!-- EXPERTISE -->
+<section id="expertise" class="section">
+  <div class="wrap">
+    <h2 class="h2">Expertise</h2>
+    <p class="sub">Browse by outcome — full case studies available on request.</p>
 
-  <!-- gallery -->
-  <section id="gallery" class="section">
-    <div class="wrap">
-      <h2 class="h2">Gallery</h2>
-      <p class="sub">Selected work images; additional photography is shared on request.</p>
-      <div class="gallery">
-        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48325.jpg" alt="Brookside water feature"></figure>
-        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream2.jpg" alt="Brookside stream"></figure>
-        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48341.jpg" alt="Brookside cascades with building"></figure>
-        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/image72632.jpg" alt="Waterfall composition"></figure>
-        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains1.jpg" alt="Fountain at Delmar Gardens"></figure>
-        <figure class="shot"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream1.jpg" alt="Stream detail"></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- booking -->
-  <section id="booking" class="section" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-    <div class="wrap">
-      <h2 class="h2">Booking</h2>
-      <p class="sub">We respond within one business day. Discretion by default.</p>
-      <form class="form" onsubmit="event.preventDefault();alert('Thank you — we will be in touch.')" aria-label="booking form">
-        <label><span>FULL NAME*</span><input name="name" required></label>
-        <label><span>EMAIL*</span><input type="email" name="email" required></label>
-        <label><span>SERVICE REQUEST*</span>
-          <select name="service" required>
-            <option value="" selected disabled>Select a service…</option>
-            <option>Natural Swimming Pool</option>
-            <option>Waterfalls & Streams</option>
-            <option>Fountains & Courts</option>
-            <option>Stone Paths & Terraces</option>
-            <option>Boulder & Garden Walls</option>
-            <option>Outdoor Rooms</option>
-            <option>Estate Maintenance / Stewardship</option>
-            <option>Other</option>
-          </select>
-        </label>
-        <label><span>PROJECT LOCATION</span><input name="location"></label>
-        <label class="full"><span>BRIEF OVERVIEW</span><textarea name="message" rows="4" placeholder="Scope, timeline, architect/designer if engaged…"></textarea></label>
-        <div class="full" style="display:flex;gap:10px;align-items:center">
-          <button class="btn" type="submit">SUBMIT BOOKING</button>
-          <span class="note">*By submitting, you consent to be contacted regarding your inquiry.</span>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-img" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/image72632.jpg')"></div>
+        <div class="card-body">
+          <h3>Natural Swimming Pools</h3>
+          <p>Swimmable water, bio-filtration, stone edges that invite bare feet.</p>
         </div>
-      </form>
+      </article>
+      <article class="card reveal">
+        <div class="card-img" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48327.jpg')"></div>
+        <div class="card-body">
+          <h3>Waterfalls & Cascades</h3>
+          <p>From sheet-fall calm to river energy — tuned by ear and grade.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-img" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains1.jpg')"></div>
+        <div class="card-body">
+          <h3>Fountains & Courts</h3>
+          <p>Formal order, durable details, and discreet mechanicals.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-img" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream1.jpg')"></div>
+        <div class="card-body">
+          <h3>Streams</h3>
+          <p>Channeled flow, riffle pools, stone weirs, native planting.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-img" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48341.jpg')"></div>
+        <div class="card-body">
+          <h3>Stonework & Terraces</h3>
+          <p>Dry-laid or mortared — stairs, walls, and places to linger.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-img" style="--img:url('https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains3.png')"></div>
+        <div class="card-body">
+          <h3>Outdoor Rooms</h3>
+          <p>Fire, shade, cooking, and the right nighttime atmosphere.</p>
+        </div>
+      </article>
     </div>
-  </section>
-</main>
+  </div>
+</section>
+
+<!-- WORK REEL (no cropping, tap to zoom) -->
+<section id="work" class="section" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2 class="h2">Recent Work</h2>
+    <p class="sub">Scroll the reel. Images display full frame — no heads or stones cut off. Tap any shot to zoom.</p>
+
+    <div class="reel-wrap">
+      <div class="reel" id="reel" aria-label="Scrollable image reel">
+        <!-- Use any mix of local images (`images/*.jpg`) or the existing URLs -->
+        <figure class="shot reveal"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48325.jpg" alt="Water feature, natural stone"/></figure>
+        <figure class="shot reveal"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream2.jpg" alt="Stream with planting"/></figure>
+        <figure class="shot reveal"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/Waterfalls/image48341.jpg" alt="Cascade at residence"/></figure>
+        <figure class="shot reveal"><img src="https://www.brooksidecontractinginc.com/cmss_files/photogallery/structure/image72632.jpg" alt="Waterfall composition"/></figure>
+        <figure class="shot reveal"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/fountains1.jpg" alt="Formal fountain"/></figure>
+        <figure class="shot reveal"><img src="https://www.brooksidecontractinginc.com/cmss_files/imagelibrary/stream1.jpg" alt="Stream detail"/></figure>
+      </div>
+      <div class="reel-ctrls" aria-hidden="true">
+        <button class="ctrl" id="prev" title="Prev" type="button">◀</button>
+        <button class="ctrl" id="next" title="Next" type="button">▶</button>
+      </div>
+    </div>
+
+    <!-- Optional Before/After compare (replace with your own images) -->
+    <div class="ba reveal" style="margin-top:18px">
+      <img class="before" src="https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2000&auto=format&fit=crop" alt="Before site"/>
+      <img class="after"  src="https://images.unsplash.com/photo-1618930872114-c5c7a7848a2b?q=80&w=2000&auto=format&fit=crop" alt="After Brookside"/>
+      <div class="handle"><span>Slide to compare</span></div>
+      <input type="range" min="0" max="100" value="50" aria-label="Before/after slider">
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2 class="h2">How we work</h2>
+      <p class="sub">Simple path. Lots of attention. We keep projects tidy and schedules honest.</p>
+      <div class="steps">
+        <div class="step reveal"><div class="badge">1</div><div><strong>Walk & listen.</strong> Site visit, constraints, wishes, and vibe.</div></div>
+        <div class="step reveal"><div class="badge">2</div><div><strong>Sketch & spec.</strong> Concepts, water behavior, budget ranges.</div></div>
+        <div class="step reveal"><div class="badge">3</div><div><strong>Build.</strong> Set elevations, set stone, set flow. Daily check-ins.</div></div>
+        <div class="step reveal"><div class="badge">4</div><div><strong>Tune.</strong> Pumps, sound, planting, and night lighting.</div></div>
+        <div class="step reveal"><div class="badge">5</div><div><strong>Steward.</strong> Seasonal visits so it ages the right way.</div></div>
+      </div>
+      <div class="ways">
+        <span class="way">GC & Architect coordination</span>
+        <span class="way">Engineer-friendly</span>
+        <span class="way">Discreet ops</span>
+      </div>
+    </div>
+    <div>
+      <h2 class="h2">Founder</h2>
+      <p class="sub">Principal-led delivery. You’ll see us on site — not just on proposals.</p>
+      <div class="panel" style="margin-top:12px">
+        <div style="display:flex;gap:16px;align-items:center">
+          <img src="images/brookside-logo-hero.png" alt="" style="width:56px;height:56px;border-radius:12px;border:1px solid var(--line);background:#121417">
+          <div>
+            <div style="font-weight:700">Brookside Team</div>
+            <div style="color:var(--muted);font-size:14px">St. Louis • Since 1994</div>
+          </div>
+        </div>
+        <p style="margin:.8em 0 0">We’ve spent decades shaping stone and water around the midwest. The goal is always the same: make it feel inevitable — as if the site requested it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / BOOKING -->
+<section id="booking" class="section" style="border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap contact">
+    <div>
+      <h2 class="h2">Booking</h2>
+      <p class="sub">We reply within one business day.</p>
+      <div class="ways" aria-label="Contact options">
+        <span class="way">Discretion by default</span>
+        <span class="way">Architect/Designer collaboration</span>
+        <span class="way">Maintenance programs</span>
+      </div>
+    </div>
+
+    <form class="form" onsubmit="event.preventDefault();handleSubmit(this)" aria-label="booking form">
+      <label><span>FULL NAME*</span><input name="name" required></label>
+      <label><span>EMAIL*</span><input type="email" name="email" required></label>
+      <label><span>SERVICE REQUEST*</span>
+        <select name="service" required>
+          <option value="" selected disabled>Select a service…</option>
+          <option>Natural Swimming Pool</option>
+          <option>Waterfalls & Streams</option>
+          <option>Fountains & Courts</option>
+          <option>Stone Paths & Terraces</option>
+          <option>Boulder & Garden Walls</option>
+          <option>Outdoor Rooms</option>
+          <option>Estate Maintenance / Stewardship</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label><span>PROJECT LOCATION</span><input name="location" placeholder="City / Neighborhood"></label>
+      <label class="full"><span>BRIEF OVERVIEW</span><textarea name="message" rows="4" placeholder="Scope, timeline, architect/designer if engaged…"></textarea></label>
+      <div class="full" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <button class="btn btn--gold" type="submit">Submit</button>
+        <span class="note">By submitting, you consent to be contacted about your inquiry.</span>
+      </div>
+    </form>
+  </div>
+</section>
 
 <footer class="wrap foot">
   <div>Brookside Contracting Inc.</div>
   <div>© <span id="y"></span> Brookside Contracting Inc. All rights reserved.</div>
 </footer>
 
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="close" aria-label="Close viewer" type="button">✕</button>
+  <img alt="">
+</div>
+
+<script>
+  // Year
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  // Reveal on scroll
+  const io = ('IntersectionObserver' in window) ? new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.12}) : null;
+  document.querySelectorAll('.reveal').forEach(el=> io ? io.observe(el) : el.classList.add('in'));
+
+  // Work reel controls
+  const reel = document.getElementById('reel');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const scrollByAmount = () => Math.min(420, reel.clientWidth * 0.8);
+
+  prevBtn.addEventListener('click', ()=> reel.scrollBy({left:-scrollByAmount(), behavior:'smooth'}));
+  nextBtn.addEventListener('click', ()=> reel.scrollBy({left: scrollByAmount(), behavior:'smooth'}));
+
+  // Lightbox for shots
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('img');
+  reel.querySelectorAll('.shot img').forEach(img=>{
+    img.addEventListener('click', ()=>{
+      lbImg.src = img.src;
+      lb.classList.add('show');
+    });
+  });
+  lb.querySelector('.close').addEventListener('click', ()=> lb.classList.remove('show'));
+  lb.addEventListener('click', (e)=>{ if(e.target===lb) lb.classList.remove('show'); });
+  document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') lb.classList.remove('show'); });
+
+  // Before/After slider
+  document.querySelectorAll('.ba').forEach(ba=>{
+    const after = ba.querySelector('.after');
+    const range = ba.querySelector('input[type="range"]');
+    const setClip = (v)=> after.style.clipPath = `inset(0 ${100-v}% 0 0)`;
+    setClip(range.value);
+    range.addEventListener('input', e=> setClip(e.target.value));
+  });
+
+  // Booking (demo only)
+  function handleSubmit(form){
+    const data = Object.fromEntries(new FormData(form).entries());
+    const missing = [];
+    if(!data.name) missing.push('Name');
+    if(!data.email) missing.push('Email');
+    if(!data.service) missing.push('Service');
+    if(missing.length){
+      alert('Please fill: ' + missing.join(', '));
+      return;
+    }
+    alert('Thank you — we will be in touch.');
+    form.reset();
+  }
+</script>
 </body>
 </html>
